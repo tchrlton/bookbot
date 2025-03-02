@@ -15,3 +15,9 @@ def count_characters (book_text):
       charDict[char_to_lowercase] = 1
   
   return charDict
+
+def sorted_character_count (num_characters):
+  for w in sorted(num_characters, key=num_characters.get, reverse=True):
+    if (w.isalpha()):
+      print(f"{w}: {num_characters[w]}")
+
